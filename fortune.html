@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Test - Daily Fortune Prediction</title>
+    <meta name="description" content="Test your fortune today, get personalized fortune predictions and suggestions.">
+    <meta name="keywords" content="fortune test, daily fortune, career fortune, love fortune, wealth fortune, health fortune">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/fortune-result.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Area -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">✨</span>
+                    <span class="logo-text">Daily Fortune</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fortune.html" class="active">Fortune Test</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Fortune Test Title Area -->
+        <section class="page-banner">
+            <div class="container">
+                <h1>Daily Fortune Test</h1>
+                <p>Fill in the information below to discover your fortune today and get personalized advice</p>
+            </div>
+        </section>
+
+        <!-- Fortune Test Form Area -->
+        <section class="fortune-form-section">
+            <div class="container">
+                <div class="fortune-form-container">
+                    <form id="fortuneForm" class="fortune-form">
+                        <div class="form-group">
+                            <h3>Basic Information</h3>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="userName">Your Name</label>
+                                    <input type="text" id="userName" name="userName" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-field">
+                                    <label>Gender</label>
+                                    <div class="radio-group">
+                                        <label class="radio-label">
+                                            <input type="radio" name="gender" value="male" checked>
+                                            <span>Male</span>
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="gender" value="female">
+                                            <span>Female</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h3>Date of Birth</h3>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="birthYear">Year</label>
+                                    <select id="birthYear" name="birthYear" required>
+                                        <option value="">Select</option>
+                                        <!-- JavaScript will dynamically add year options -->
+                                    </select>
+                                </div>
+                                <div class="form-field">
+                                    <label for="birthMonth">Month</label>
+                                    <select id="birthMonth" name="birthMonth" required>
+                                        <option value="">Select</option>
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                        <option value="4">April</option>
+                                        <option value="5">May</option>
+                                        <option value="6">June</option>
+                                        <option value="7">July</option>
+                                        <option value="8">August</option>
+                                        <option value="9">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                </div>
+                                <div class="form-field">
+                                    <label for="birthDay">Day</label>
+                                    <select id="birthDay" name="birthDay" required>
+                                        <option value="">Select</option>
+                                        <!-- JavaScript will dynamically add day options based on month -->
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h3>Additional Information (Optional)</h3>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="bloodType">Blood Type</label>
+                                    <select id="bloodType" name="bloodType">
+                                        <option value="">Select</option>
+                                        <option value="A">Type A</option>
+                                        <option value="B">Type B</option>
+                                        <option value="O">Type O</option>
+                                        <option value="AB">Type AB</option>
+                                    </select>
+                                </div>
+                                <div class="form-field">
+                                    <label for="zodiac">Zodiac Sign</label>
+                                    <select id="zodiac" name="zodiac">
+                                        <option value="">Select</option>
+                                        <option value="aries">Aries</option>
+                                        <option value="taurus">Taurus</option>
+                                        <option value="gemini">Gemini</option>
+                                        <option value="cancer">Cancer</option>
+                                        <option value="leo">Leo</option>
+                                        <option value="virgo">Virgo</option>
+                                        <option value="libra">Libra</option>
+                                        <option value="scorpio">Scorpio</option>
+                                        <option value="sagittarius">Sagittarius</option>
+                                        <option value="capricorn">Capricorn</option>
+                                        <option value="aquarius">Aquarius</option>
+                                        <option value="pisces">Pisces</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-large">Start Test</button>
+                            <button type="reset" class="btn btn-secondary">Reset</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Fortune Result Area -->
+                <div id="fortuneResult" class="fortune-result">
+                    <!-- JavaScript will dynamically fill in the fortune results here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">✨</span>
+                    <span class="logo-text">Daily Fortune</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="fortune.html">Fortune Test</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><a href="mailto:contact@dailyfortune.com">contact@dailyfortune.com</a></li>
+                            <li><a href="#">WeChat: DailyFortune</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Daily Fortune. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/fortune.js"></script>
+</body>
+</html>

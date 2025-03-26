@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>历史记录 - 每日运势测试</title>
+    <meta name="description" content="查看您之前的运势测试记录，分析运势趋势。">
+    <meta name="keywords" content="运势历史, 测试记录, 运势趋势, 每日运势">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/fortune-result.css">
+    <link rel="stylesheet" href="css/history.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- 页头区域 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">✨</span>
+                    <span class="logo-text">每日运势</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="fortune.html">运势测试</a></li>
+                    <li><a href="history.html" class="active">历史记录</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main>
+        <!-- 历史记录标题区域 -->
+        <section class="page-banner">
+            <div class="container">
+                <h1>历史记录</h1>
+                <p>查看您的运势变化趋势，了解运势规律</p>
+            </div>
+        </section>
+
+        <!-- 历史记录列表区域 -->
+        <section class="history-section">
+            <div class="container">
+                <div class="history-filters">
+                    <h3>历史记录</h3>
+                    <div class="filter-buttons">
+                        <button class="btn btn-outline active" data-period="all">全部记录</button>
+                        <button class="btn btn-outline" data-period="week">最近一周</button>
+                        <button class="btn btn-outline" data-period="month">最近一月</button>
+                    </div>
+                </div>
+                
+                <!-- 历史记录图表 -->
+                <div class="history-chart">
+                    <canvas id="historyChart"></canvas>
+                </div>
+                
+                <!-- 历史记录表格 -->
+                <div class="history-table-container">
+                    <table class="table table-striped history-table">
+                        <thead>
+                            <tr>
+                                <th>日期</th>
+                                <th>姓名</th>
+                                <th>评分</th>
+                                <th>状态</th>
+                                <th>生命灵数</th>
+                                <th>五行属性</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historyTableBody">
+                            <!-- JavaScript 将在这里动态添加历史记录 -->
+                            <tr class="no-records">
+                                <td colspan="5">暂无历史记录</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- 无记录提示 -->
+                <div id="noRecordsMessage" class="no-records-message">
+                    <p>暂无历史记录</p>
+                    <a href="fortune.html" class="btn btn-primary">去测测运势</a>
+                </div>
+                
+                <!-- 清除历史记录 -->
+                <div class="clear-history">
+                    <button id="clearHistoryBtn" class="btn btn-danger">清除历史记录</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚区域 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">✨</span>
+                    <span class="logo-text">每日运势</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>快速链接</h4>
+                        <ul>
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="fortune.html">运势测试</a></li>
+                            <li><a href="history.html">历史记录</a></li>
+                            <li><a href="about.html">关于我们</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h4>联系我们</h4>
+                        <ul>
+                            <li><a href="mailto:contact@dailyfortune.com">contact@dailyfortune.com</a></li>
+                            <li><a href="#">公众号: 每日运势</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 每日运势. 保留所有权利.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">隐私政策</a>
+                    <a href="#">使用条款</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <!-- JavaScript 文件 -->
+    <script src="js/main.js"></script>
+    <script src="js/history.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html> 
