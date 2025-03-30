@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8H1KEJ9FKX"></script>
@@ -12,18 +12,18 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的网页 - 内容页面</title>
+    <title>My Website - Content Page</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- 添加网站图标 -->
+    <!-- Website Icon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- 添加网站描述和关键词 -->
-    <meta name="description" content="网站的主要内容展示页面">
-    <meta name="keywords" content="内容展示, 网格布局, CSS Grid">
+    <!-- Website Description and Keywords -->
+    <meta name="description" content="Main content display page of the website">
+    <meta name="keywords" content="content display, grid layout, CSS Grid">
     
-    <!-- 内容页特有的样式 -->
+    <!-- Content page specific styles -->
     <style>
-        /* 内容网格布局样式 */
+        /* Content grid layout styles */
         .content-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -31,7 +31,7 @@
             margin-top: 30px;
         }
         
-        /* 内容卡片样式 */
+        /* Content card styles */
         .content-card {
             background-color: #fff;
             border-radius: 5px;
@@ -45,7 +45,7 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
         
-        /* 卡片图片容器 */
+        /* Card image container */
         .card-image {
             height: 200px;
             background-color: #f0f0f0;
@@ -61,7 +61,7 @@
             object-fit: cover;
         }
         
-        /* 卡片内容 */
+        /* Card content */
         .card-content {
             padding: 20px;
         }
@@ -71,7 +71,7 @@
             color: #2c3e50;
         }
         
-        /* 卡片类别标签 */
+        /* Card category labels */
         .card-category {
             display: inline-block;
             padding: 3px 10px;
@@ -82,7 +82,7 @@
             margin-bottom: 10px;
         }
         
-        /* 卡片底部 */
+        /* Card footer */
         .card-footer {
             display: flex;
             justify-content: space-between;
@@ -97,7 +97,7 @@
             font-size: 0.85em;
         }
         
-        /* 特殊卡片 - 跨两列 */
+        /* Special card - spans two columns */
         .content-card.featured {
             grid-column: span 2;
         }
@@ -106,7 +106,7 @@
             height: 300px;
         }
         
-        /* 响应式调整 */
+        /* Responsive adjustments */
         @media (max-width: 992px) {
             .content-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -133,178 +133,180 @@
     </style>
 </head>
 <body>
-    <!-- 导航栏部分 -->
+    <!-- Navigation Bar -->
     <header class="header">
         <div class="container">
-            <!-- 网站标志/名称 -->
+            <!-- Website Logo/Name -->
             <div class="logo">
-                <h1>我的网页</h1>
+                <h1>My Website</h1>
             </div>
             
-            <!-- 导航菜单 -->
+            <!-- Navigation Menu -->
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html">首页</a></li>
-                    <li><a href="about.html">关于我们</a></li>
-                    <li><a href="content.html" class="active">内容页面</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="content.html" class="active">Content Page</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     
-    <!-- 主要内容区 -->
+    <!-- Main Content Area -->
     <main class="main-content">
         <div class="container">
-            <!-- 页面标题区 -->
+            <!-- Page Header Area -->
             <div class="page-header">
-                <h2>内容展示</h2>
-                <p>这个页面展示了使用 CSS Grid 布局的内容卡片。每个卡片都包含一个图片、标题、描述和额外的信息。</p>
+                <h2>Content Display</h2>
+                <p>This page showcases content cards using CSS Grid layout. Each card contains an image, title, description, and additional information.</p>
             </div>
             
-            <!-- 内容筛选区 -->
+            <!-- Content Filter Area -->
             <div class="content-filters">
-                <h3>内容分类</h3>
+                <h3>Content Categories</h3>
                 <div class="filter-buttons">
-                    <button class="btn active">全部</button>
-                    <button class="btn">科技</button>
-                    <button class="btn">设计</button>
-                    <button class="btn">编程</button>
+                    <button class="btn active">All</button>
+                    <button class="btn">Technology</button>
+                    <button class="btn">Design</button>
+                    <button class="btn">Programming</button>
                 </div>
             </div>
             
-            <!-- 内容网格区 -->
+            <!-- Content Grid Area -->
             <div class="content-grid">
-                <!-- 特色内容卡片 - 跨两列 -->
+                <!-- Featured Content Card - spans two columns -->
                 <div class="content-card featured">
                     <div class="card-image">
-                        <!-- 这里可以放置实际图片 -->
+                        <!-- Placeholder for actual image -->
                         <div style="background-color: #e3f2fd; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-                            <span style="font-size: 2em; color: #3498db;">特色图片</span>
+                            <span style="font-size: 2em; color: #3498db;">Featured Image</span>
                         </div>
                     </div>
                     <div class="card-content">
-                        <span class="card-category">特色</span>
-                        <h3>CSS Grid 网格布局介绍</h3>
-                        <p>CSS Grid 布局是一种二维网格布局系统，它彻底改变了网页设计的方式。使用 Grid 布局，你可以轻松创建复杂的网格结构，而无需使用浮动或定位等传统技术。</p>
-                        <p>本文将介绍 Grid 布局的基本概念和使用方法，帮助你快速掌握这一强大的布局工具。</p>
+                        <span class="card-category">Featured</span>
+                        <h3>CSS Grid Layout Introduction</h3>
+                        <p>CSS Grid layout is a two-dimensional grid system that has completely changed the way web pages are designed. Using Grid layout, you can easily create complex grid structures without using traditional techniques like floats or positioning.</p>
+                        <p>This article will introduce the basic concepts and usage methods of Grid layout, helping you quickly master this powerful layout tool.</p>
                     </div>
                     <div class="card-footer">
-                        <span class="card-date">2023年12月15日</span>
-                        <a href="#" class="btn">阅读更多</a>
+                        <span class="card-date">December 15, 2023</span>
+                        <a href="#" class="btn">Read More</a>
                     </div>
                 </div>
                 
-                <!-- 普通内容卡片 -->
+                <!-- Regular Content Cards -->
                 <div class="content-card">
                     <div class="card-image">
-                        <!-- 这里可以放置实际图片 -->
-                        <div style="background-color: #e8f5e9; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-                            <span style="font-size: 1.5em; color: #4caf50;">科技图片</span>
+                        <!-- Placeholder for actual image -->
+                        <div style="background-color: #e3f2fd; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                            <span style="font-size: 2em; color: #3498db;">Image 1</span>
                         </div>
                     </div>
                     <div class="card-content">
-                        <span class="card-category">科技</span>
-                        <h3>人工智能的基础知识</h3>
-                        <p>人工智能是计算机科学的一个分支，旨在创建能够模拟人类智能的系统。这个领域正在迅速发展，影响着我们生活的方方面面。</p>
+                        <span class="card-category">Technology</span>
+                        <h3>The Rise of Artificial Intelligence</h3>
+                        <p>Artificial intelligence is gradually changing our lives. This article discusses how AI technology is evolving and its impact on various industries.</p>
                     </div>
                     <div class="card-footer">
-                        <span class="card-date">2023年12月10日</span>
-                        <a href="#" class="btn">阅读更多</a>
+                        <span class="card-date">December 10, 2023</span>
+                        <a href="#" class="btn">Read More</a>
                     </div>
                 </div>
                 
-                <!-- 普通内容卡片 -->
                 <div class="content-card">
                     <div class="card-image">
-                        <!-- 这里可以放置实际图片 -->
-                        <div style="background-color: #fff3e0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-                            <span style="font-size: 1.5em; color: #ff9800;">设计图片</span>
+                        <!-- Placeholder for actual image -->
+                        <div style="background-color: #e3f2fd; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                            <span style="font-size: 2em; color: #3498db;">Image 2</span>
                         </div>
                     </div>
                     <div class="card-content">
-                        <span class="card-category">设计</span>
-                        <h3>用户界面设计原则</h3>
-                        <p>良好的用户界面设计是创建成功数字产品的关键。本文探讨了一些基本的 UI 设计原则，包括一致性、简洁性和可用性。</p>
+                        <span class="card-category">Design</span>
+                        <h3>UI/UX Design Principles</h3>
+                        <p>Good design can significantly improve user experience. Learn essential UI/UX design principles to create more user-friendly interfaces.</p>
                     </div>
                     <div class="card-footer">
-                        <span class="card-date">2023年12月5日</span>
-                        <a href="#" class="btn">阅读更多</a>
+                        <span class="card-date">December 5, 2023</span>
+                        <a href="#" class="btn">Read More</a>
                     </div>
                 </div>
                 
-                <!-- 普通内容卡片 -->
                 <div class="content-card">
                     <div class="card-image">
-                        <!-- 这里可以放置实际图片 -->
-                        <div style="background-color: #e8eaf6; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-                            <span style="font-size: 1.5em; color: #3f51b5;">编程图片</span>
+                        <!-- Placeholder for actual image -->
+                        <div style="background-color: #e3f2fd; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                            <span style="font-size: 2em; color: #3498db;">Image 3</span>
                         </div>
                     </div>
                     <div class="card-content">
-                        <span class="card-category">编程</span>
-                        <h3>HTML5 新特性介绍</h3>
-                        <p>HTML5 带来了许多新功能和元素，大大增强了网页的能力。本文介绍了 HTML5 的主要特性，包括语义化标签、多媒体支持和 Canvas 绘图。</p>
+                        <span class="card-category">Programming</span>
+                        <h3>JavaScript Modern Features</h3>
+                        <p>JavaScript is constantly evolving. This article introduces ES6+ features and how to use them to write more efficient code.</p>
                     </div>
                     <div class="card-footer">
-                        <span class="card-date">2023年11月28日</span>
-                        <a href="#" class="btn">阅读更多</a>
+                        <span class="card-date">November 28, 2023</span>
+                        <a href="#" class="btn">Read More</a>
                     </div>
                 </div>
                 
-                <!-- 普通内容卡片 -->
                 <div class="content-card">
                     <div class="card-image">
-                        <!-- 这里可以放置实际图片 -->
-                        <div style="background-color: #ffebee; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-                            <span style="font-size: 1.5em; color: #f44336;">设计图片</span>
+                        <!-- Placeholder for actual image -->
+                        <div style="background-color: #e3f2fd; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                            <span style="font-size: 2em; color: #3498db;">Image 4</span>
                         </div>
                     </div>
                     <div class="card-content">
-                        <span class="card-category">设计</span>
-                        <h3>响应式设计实践</h3>
-                        <p>响应式设计允许网页在不同设备上呈现最佳视觉效果。本文分享了一些响应式设计的实践经验和技巧，帮助你创建适应各种屏幕尺寸的网站。</p>
+                        <span class="card-category">Technology</span>
+                        <h3>Blockchain Technology</h3>
+                        <p>Blockchain is more than just cryptocurrency. Learn how blockchain technology works and its potential applications across different fields.</p>
                     </div>
                     <div class="card-footer">
-                        <span class="card-date">2023年11月20日</span>
-                        <a href="#" class="btn">阅读更多</a>
+                        <span class="card-date">November 20, 2023</span>
+                        <a href="#" class="btn">Read More</a>
                     </div>
                 </div>
-                
-                <!-- 普通内容卡片 -->
-                <div class="content-card">
-                    <div class="card-image">
-                        <!-- 这里可以放置实际图片 -->
-                        <div style="background-color: #e0f7fa; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-                            <span style="font-size: 1.5em; color: #00bcd4;">编程图片</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-category">编程</span>
-                        <h3>CSS3 动画效果教程</h3>
-                        <p>CSS3 动画可以为网页添加生动的交互效果，提升用户体验。本文介绍了如何使用 CSS3 创建各种动画效果，从简单的过渡到复杂的关键帧动画。</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">2023年11月15日</span>
-                        <a href="#" class="btn">阅读更多</a>
-                    </div>
-                </div>
+            </div>
+            
+            <!-- Pagination Area -->
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#" class="next">Next</a>
             </div>
         </div>
     </main>
     
-    <!-- 页脚部分 -->
+    <!-- Footer Area -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2023 我的网页. 保留所有权利。</p>
-            <div class="footer-links">
-                <a href="#">隐私政策</a>
-                <a href="#">使用条款</a>
-                <a href="about.html">关于我们</a>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>My Website</h2>
+                    <p>Sharing knowledge and inspiration</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="content.html">Content</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:info@mywebsite.com">info@mywebsite.com</a></p>
+                    <p>Follow us: <a href="#">Twitter</a> | <a href="#">Facebook</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 My Website. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
-    <!-- 引入JavaScript文件 -->
+    
+    <!-- JavaScript Files -->
     <script src="js/main.js"></script>
 </body>
 </html> 
